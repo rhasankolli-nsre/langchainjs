@@ -182,7 +182,7 @@ export class QdrantVectorStore extends VectorStore {
     ).map((res) => [
       new Document({
         metadata: res.payload.metadata,
-        pageContent: res.payload.content,
+        pageContent: res.payload.page_content,
       }),
       res.score,
     ]);
